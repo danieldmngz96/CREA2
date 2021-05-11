@@ -1,0 +1,74 @@
+.PriceCard {
+  gap: 20px;
+  padding: 25px;
+  display: grid;
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+}
+
+.PriceCard__header h2 {
+  font-size: 2rem;
+  padding-left: 15px;
+  color: var(--primary-color);
+}
+
+.PriceCard__header h2 span {
+  font-size: 1rem;
+}
+
+.PriceCard__header--info {
+  display: flex;
+  align-items: center;
+  color: var(--gray-500);
+}
+
+.PriceCard__header--info span {
+  padding: 10px;
+}
+
+.PriceCard__body {
+  padding: 0 10px;
+}
+
+.PriceCard__body--list {
+  gap: 15px;
+  display: grid;
+  align-items: center;
+}
+
+.PriceCard__body--list li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.PriceCard__body--list li span {
+  padding: 0 5px;
+}
+
+.PriceCard__body--list li span:first-child {
+  font-size: x-large;
+  color: #DB2777;
+}
+
+.PriceCard__footer {
+  display: grid;
+  align-items: flex-end;
+}
+
+.PriceCard__footer a {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .PriceCard {
+    border-radius: var(--border-radius);
+  }
+}

@@ -1,0 +1,137 @@
+.Hero {
+  padding: 25px;
+  display: grid;
+  gap: 20px;
+  background-color: var(--primary-color);
+}
+
+.Hero__container {
+  gap: 10px;
+  display: grid;
+  color: var(--soft-color);
+}
+
+.Hero__container h1 {
+  font-size: 1.8rem;
+}
+
+.Hero__container h6 {
+  font-size: 0.8rem;
+}
+
+.Hero__image {
+  padding: 25px;
+  max-width: 300px;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Hero__container--links {
+  gap: 10px;
+  display: grid;
+  grid-row-start: 3;
+}
+
+.Hero__container--links a:first-child {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+}
+
+.Hero__container--links a:last-child {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--secondary-color);
+}
+
+.custom-shape-divider-top {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .Hero {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background: none;
+  }
+
+  .Hero::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 60px;
+    z-index: -1;
+    left: 0;
+    background-color: var(--primary-color);
+  }
+
+  .Hero__image {
+    grid-row-end: span 2;
+  }
+
+  .Hero__container--links {
+    grid-row-start: 2;
+    align-self: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .custom-shape-divider-top {
+    display: block;
+  }
+
+  .custom-shape-divider-top {
+    position: absolute;
+    top: 250px;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top svg {
+      position: relative;
+      display: block;
+      width: calc(168% + 1.3px);
+      height: 800px;
+  }
+
+  .custom-shape-divider-top .shape-fill {
+      fill: #111827;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Hero {
+    padding: 25px 100px;
+  }
+  .Hero__image {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Hero__container h1 {
+    font-size: 2rem;
+  }
+  .Hero__container h6 {
+    font-size: 1rem;
+  }
+  .Hero {
+    column-gap: 150px;
+    padding: 50px 200px;
+  }
+}
