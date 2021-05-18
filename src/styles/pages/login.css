@@ -1,0 +1,40 @@
+.Login {
+  display: grid;
+  width: 100%;
+  padding: 100px 20px;
+  justify-items: center;
+  gap: 20px;
+}
+
+.form-control {
+  gap: 20px;
+  display: grid;
+}
+
+.form-textfield {
+  border-radius: var(--border-radius);
+}
+
+.form-legend {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  background: none;
+  min-width: 280px;
+}
+
+.form-button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+}
