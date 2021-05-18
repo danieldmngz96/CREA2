@@ -11,7 +11,7 @@ const Hero = () => {
         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sed dicta modi voluptas culpa autem blanditiis facilis enim voluptatem suscipit eveniet doloremque soluta, minus tempora tempore itaque fuga nulla nisi.</h6>
       </div>
       <div className='Hero__container--links'>
-          <Link to='/'>Perzonaliza tu plan</Link>
+          <Link to="/Planes" >Perzonaliza tu plan</Link>
           <Link to='/'>Iniciar sesión</Link>
         </div>
       <figure className='Hero__image'>
