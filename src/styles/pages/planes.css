@@ -1,0 +1,67 @@
+.title__one{
+    font-family: Nunito Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 87px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 9%;
+    padding-bottom: 4%;
+}
+.box__main{
+    border: 1px solid #000;
+    height: 395px;
+    margin-bottom: 49px !important;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+    border-radius: 27px;
+}
+.position__input {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+    padding-left: 4%;
+    padding-top: 4%;
+  }
+.main__checkbox{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+}
+.box__value{
+    border: 1px solid #000;
+    width: 77%;
+    background-color: #fff;
+    padding: 120px;
+    margin-left: 296%;
+    margin-top: -74px;
+    padding-bottom: 91%;
+}
+.title__value{
+    margin-left: -33px;
+    margin-top: -110px;
+}
+.position__paragraph {
+    margin-left: -109px;
+}
+.boton_comprar{
+    text-decoration: none;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    background-color: rgba(138,221,45,0);
+    border-radius: 11px;
+    border: 2px solid #000000;
+    margin-top: 39px;
+    position: relative;
+    top: 29px;
+    width: 394%;
+    margin-left: -203%;
+  }
+  .boton_comprar:hover{
+    color: #000000;
+    background-color: #ffffff;
+  }
