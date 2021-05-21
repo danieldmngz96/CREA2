@@ -5,14 +5,14 @@ import '../styles/pages/planes.css';
 
 const Planes = () => {
     return (
-    <div>
+<div>
    
     <h1 className='title__one'>Solo te falta un Paso <br/> 
     para adquirir tu Plan</h1>
 
-    <section className='box__main' >
+  <section className='box__main' >
     <form className="position__input"> 
-    <label>
+      <label>
      <input type="text" placeholder="Nombre"  />
       </label>
 
@@ -25,11 +25,51 @@ const Planes = () => {
       </label>
 
       <label>
-     <input type="text" />
+      <input type="number" placeholder="Numero " min="1" max="5"/>
       </label>
-    </form>
+
+
+    <section className='main__checkbox'>
+      <label>
+      <input type="checkbox" value="Pagina Web"/>
+      <p> Pagina Web</p></label>
+
+      <label>
+      <input type="checkbox" value="Administración Paginas Web"/>
+      <p> Administración Paginas Web</p></label>
+
+      <label>
+      <input type="checkbox" value="Marketing Digital "/>
+      <p> Marketing Digital </p></label>
+
+      <label>
+      <input type="checkbox" value="Número de publicaciones"/>
+      <p> Número de publicaciones</p></label>
+
+      <label>
+      <input type="checkbox" value="Pasarela de pagos (E-commerce)"/>
+      <p> Pasarela de pagos (E-commerce)</p></label>
+
+      <label>
+      <input type="checkbox" value="Formularios de búsqueda"/>
+      <p> Formularios de búsqueda</p></label>
+    <button className="boton_comprar">Comprar</button>
     </section>
-    </div>
+
+
+      <section className='box__value'>
+      <h3 className='title__value'>VALOR TOTAL <br/> MENSUAL</h3>
+      <div className='position__paragraph'>
+        <p className='paragraph__web'>Pagina web - $...</p><br/>
+        <p className='paragraph__digital'>Marketing digital - $...</p><br/>
+        <p className='paragraph__pagos'>Pasarela de pagos - $...</p><br/>
+        </div>
+      </section>
+    </form>
+
+  </section>
+  
+</div>
       
     
   

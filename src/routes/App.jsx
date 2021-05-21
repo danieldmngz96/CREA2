@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Layout from '../containers/Layout'
 import Home from '../pages/Home';
+import Planes from '../pages/Planes';
 import '../styles/index.css';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/Planes' component={Planes} />
         </Switch>
       </Layout>
     </BrowserRouter>
