@@ -16,7 +16,7 @@ const Home = () => {
             items={['1 user', '10 downloads per month', 'Roster files']}
           />
           <PriceCard
-            price='$39'
+            price='$42'
             title='Plan web e-commerce'
             items={['5 user', 'Unlimited downloads', 'Custom packs', 'Fully-editable files', '200+ custom icons']}
           />
