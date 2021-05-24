@@ -1,35 +1,37 @@
 import React from 'react';
 //import PriceCard from '../components/PriceCard';
-//import Hero from '../containers/Hero';
+import Hero from '../containers/Hero';
 import '../styles/pages/planes.css';
 
 const Planes = () => {
     return (
-<div>
+<div className='background' >
+
    
     <h1 className='title__one'>Solo te falta un Paso <br/> 
     para adquirir tu Plan</h1>
 
   <section className='box__main' >
-    <form className="position__input"> 
+    <form className='position__input'> 
       <label>
-     <input type="text" placeholder="Nombre"  />
+     <input className='style__input' type="text" placeholder="Nombre"  />
       </label>
 
       <label>
-     <input type="text" placeholder="Usuario"  />
+     <input  className='style__input' type="text" placeholder="Usuario"  />
       </label>
       
       <label>
-     <input type="password" placeholder="Password"  />
+     <input className='style__input' type="password" placeholder="Password"  />
       </label>
 
       <label>
-      <input type="number" placeholder="Numero " min="1" max="5"/>
+      <input className='style__input' type="number" placeholder="Numero " min="1" max="5"/>
       </label>
 
 
     <section className='main__checkbox'>
+      
       <label>
       <input type="checkbox" value="Pagina Web"/>
       <p> Pagina Web</p></label>
@@ -64,6 +66,7 @@ const Planes = () => {
         <p className='paragraph__digital'>Marketing digital - $...</p><br/>
         <p className='paragraph__pagos'>Pasarela de pagos - $...</p><br/>
         </div>
+        <button className="boton__value">Total $...</button>
       </section>
     </form>
 
