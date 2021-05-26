@@ -1,5 +1,8 @@
+.background{
+    height: 40%;
+    background-image: radial-gradient(ellipse farthest-corner at 90% 75% , #fff 30%, rgba(0, 255, 0, 0) 10%, #111827 10%);
+}
 .title__one{
-    font-family: Nunito Sans;
     font-size: 64px;
     font-style: normal;
     font-weight: 600;
@@ -8,6 +11,8 @@
     text-align: center;
     padding-top: 9%;
     padding-bottom: 4%;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
 }
 .box__main{
     border: 1px solid #000;
@@ -42,6 +47,7 @@
 .title__value{
     margin-left: -33px;
     margin-top: -110px;
+    font-family: 'Farro', sans-serif;
 }
 .position__paragraph {
     margin-left: -109px;
@@ -64,4 +70,26 @@
   .boton_comprar:hover{
     color: #000000;
     background-color: #ffffff;
+  }
+
+  .boton__value{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    background-color: #4F97C4;
+    border-radius: 11px;
+    border: 2px solid #000000;
+    position: relative;
+    bottom: 16px;
+    left: -113px;
+    width: 227px;
+  }
+  .boton__value:hover{
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .style__input{
+    padding: 7%;
+    border-radius: 12px;
   }

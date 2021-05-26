@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
       <div className='Hero__container--links'>
           <Link to="/Planes" >Perzonaliza tu plan</Link>
-          <Link to='/'>Iniciar sesión</Link>
+          <Link to='/Login'>Iniciar sesión</Link>
         </div>
       <figure className='Hero__image'>
         <img src={Image} alt='' />
