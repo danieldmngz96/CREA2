@@ -93,3 +93,41 @@
     padding: 7%;
     border-radius: 12px;
   }
+/*Media Queries*/
+
+@media (max-width: 800px) {
+  .box__main {
+    border: 1px solid #000;
+    height: 1146px;;
+    margin-bottom: 49px !important;
+    width: 80%;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    background-color: #C4C4C4;
+    border-radius: 27px;
+  }
+  .position__input {
+    display: block;
+  }
+  .style__input{
+    border-radius: 12px;
+    margin-bottom: 6%;
+  }
+  .box__value{
+    border: 1px solid #000;
+    width: 77%;
+    background-color: #fff;
+    padding: 120px;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
+  .main__checkbox {
+    display: inherit;
+  }
+  .boton_comprar {
+    margin-left: 0px;
+    width: 46%;
+    margin-top: 0px;
+    margin-bottom: 16%;
+  }
+}
