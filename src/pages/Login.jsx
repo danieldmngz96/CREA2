@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Header from '../components/Header';
 import '../styles/pages/login.css';
 
 const TextField = ({ id, name, legend, type, placeholder, register }) => {
@@ -29,36 +30,40 @@ const Login = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    window.location.href = '/dashboard';
   }
 
   return (
-    <section className='Login'>
-      <h1>¡Bienvenido!</h1>
-      <form className='form-control'  onSubmit={handleSubmit(onSubmit)}>
-        <TextField
-          id='Email'
-          type='email'
-          name='email'
-          legend='Correo *'
-          register={register}
-          placeholder='Correo electronico'
-        />
-        <fieldset className='form-textfield'>
-          <legend className='form-legend'>Contraseña *</legend>
-          <input
-            id='Password'
-            type='password'
-            name='password'
-            className='form-input'
-            placeholder='Contraseña'
-            {...register('password', {required: true, maxLength: 80})}
+    <>
+      <Header />
+      <section className='Login'>
+        <h1>¡Bienvenido!</h1>
+        <form className='form-control'  onSubmit={handleSubmit(onSubmit)}>
+          <TextField
+            id='Email'
+            type='email'
+            name='email'
+            legend='Correo *'
+            register={register}
+            placeholder='Correo electronico'
           />
-        </fieldset>
-        <button type='submit' className='form-button'>
-          Continuar
-        </button>
-      </form>
-    </section>
+          <fieldset className='form-textfield'>
+            <legend className='form-legend'>Contraseña *</legend>
+            <input
+              id='Password'
+              type='password'
+              name='password'
+              className='form-input'
+              placeholder='Contraseña'
+              {...register('password', {required: true, maxLength: 80})}
+            />
+          </fieldset>
+          <button type='submit' className='form-button'>
+            Continuar
+          </button>
+        </form>
+      </section>
+    </>
   );
 }
 
