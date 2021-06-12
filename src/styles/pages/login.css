@@ -30,8 +30,15 @@
   min-width: 280px;
 }
 
+.form-error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
 .form-button {
   border: none;
+  cursor: pointer;
   font-weight: bold;
   padding: 10px 14px;
   color: var(--secondary-color);

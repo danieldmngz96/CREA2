@@ -17,28 +17,44 @@ const TextField = ({ id, name, legend, type, placeholder, register }) => {
         placeholder={placeholder || ''}
         onFocus={() => setActive(true)}
         onBlur={() => setActive(false)}
-        {...register('email', {required: true, maxLength: 80})}
+        {...register('email', { required: true, maxLength: 80 })}
       />
     </fieldset>
   );
-
-
-}
+};
 
 const Login = () => {
   const { register, handleSubmit } = useForm();
+  const [error, setError] = useState(false);
 
   const onSubmit = (data) => {
-    console.log(data);
-    window.location.href = '/dashboard';
-  }
+    try {
+      fetch('https://crea-api.vercel.app/api/auth/sign-in', {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Basic ' + btoa(`${data.email}:${data.password}`)
+        }
+      })
+      .then(response => response.json())
+      .then((data) => {
+        setError(false);
+        document.cookie = `token=${data.token}`;
+        document.cookie = `email=${data.user.email}`;
+        window.location.href = '/dashboard';
+      }).catch(() => {
+        setError(true);
+      });
+    } catch (error) {
+      setError(true);
+    }
+  };
 
   return (
     <>
       <Header />
       <section className='Login'>
         <h1>¡Bienvenido!</h1>
-        <form className='form-control'  onSubmit={handleSubmit(onSubmit)}>
+        <form className='form-control' onSubmit={handleSubmit(onSubmit)}>
           <TextField
             id='Email'
             type='email'
@@ -55,9 +71,12 @@ const Login = () => {
               name='password'
               className='form-input'
               placeholder='Contraseña'
-              {...register('password', {required: true, maxLength: 80})}
+              {...register('password', { required: true, maxLength: 80 })}
             />
           </fieldset>
+          {error && (
+            <p className='form-error'>Error en email o contraseña</p>
+          )}
           <button type='submit' className='form-button'>
             Continuar
           </button>
@@ -65,6 +84,6 @@ const Login = () => {
       </section>
     </>
   );
-}
+};
 
 export default Login;

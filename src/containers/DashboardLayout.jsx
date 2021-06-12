@@ -19,6 +19,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import ScheduleIcon from '@material-ui/icons/Schedule';
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import PaymentIcon from '@material-ui/icons/Payment';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
@@ -98,6 +99,12 @@ const DashboardLayout = ({ children }) => {
     setOpen(false);
   };
 
+  const handleLogout = () => {
+    document.cookie = `token=`;
+    document.cookie = `email=`;
+    window.location.href = '/';
+  }
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -168,6 +175,13 @@ const DashboardLayout = ({ children }) => {
               <ListItemText primary='Schedule' />
             </ListItem>
           </Link>
+        </List>
+        <Divider />
+        <List>
+          <ListItem button onClick={handleLogout}>
+            <ListItemIcon><ExitToAppIcon /></ListItemIcon>
+            <ListItemText primary='Salir' />
+          </ListItem>
         </List>
       </Drawer>
       <main className={classes.content}>
