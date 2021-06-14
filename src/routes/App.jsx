@@ -8,6 +8,7 @@ import Progress from '../pages/Dashboard/Progress';
 import Schedule from '../pages/Dashboard/Schedule';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
+import Planes from '../pages/Planes';
 import '../styles/index.css';
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/login' component={Login} />
+              <Route exact path='/Planes' component={Planes} />
             </Switch>
           </Layout>
         </BrowserRouter>
