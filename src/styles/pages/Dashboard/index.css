@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
+    column-gap: 20px;
+    row-gap: 5px;
+}
+.whatsapp {
+    position:fixed;
+    width: 41px;
+    height: 40px;
+    bottom:40px;
+    right:40px;
+    /*background-color:#25d366;*/
+    background-image: url(../../../assets/whatsapp-40.png);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
