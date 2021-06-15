@@ -4,10 +4,11 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Box from '@material-ui/core/Box';
+import ProgressTable from '../../components/ProgressTable';
 
 const LinearProgressWithLabel = ({ value }) => {
   return (
@@ -26,7 +27,7 @@ const LinearProgressWithLabel = ({ value }) => {
 
 const ProgressCard = ({ title, subtitle, description, progress }) => {
   return (
-    <Card className='' variant="outlined">
+    <Card className='' variant='outlined'>
       <CardContent>
         <Typography className='' color='textSecondary' gutterBottom>
           {subtitle}
@@ -85,7 +86,17 @@ const Progress = () => {
           />
         </Grid>
       </Grid>
-      <a href="https://wa.me/?text=Me%20gustaría%20saber%20más%20sobre%20mi%20proyecto" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      <Box marginY={10}>
+        <ProgressTable />
+      </Box>
+      <a
+        href='https://wa.me/?text=Me%20gustaría%20saber%20más%20sobre%20mi%20proyecto'
+        className='whatsapp'
+        target='_blank'
+      >
+        {' '}
+        <i className='fa fa-whatsapp whatsapp-icon'></i>
+      </a>
     </Container>
   );
 };

@@ -9,9 +9,10 @@ const Dashboard = () => {
     fecha: new Date("2020","11","18")
   });
 
-   const onChange=fecha=>{
+  const onChange=fecha=>{
     setState({fecha: fecha});
   }
+
   return (
     <>
     <section>
@@ -25,7 +26,7 @@ const Dashboard = () => {
         <div className="pay">
           <p>Proximo pago</p>
           <p>Avance proyecto</p>
-        <a href="https://wa.me/?text=Me%20gustaría%20saber%20más%20sobre%20mi%20proyecto" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        <a href="https://wa.me/?text=Me%20gustaría%20saber%20más%20sobre%20mi%20proyecto" className="whatsapp" target="_blank"> <i className="fa fa-whatsapp whatsapp-icon"></i></a>
         </div>
       </div>
     </section>
