@@ -11,6 +11,7 @@ import Login from '../pages/Login';
 import Planes from '../pages/Planes';
 import '../styles/index.css';
 
+
 const App = () => {
   const token = document.cookie.replace(/(?:(?:^|.*;\s*)token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   const email = document.cookie.replace(/(?:(?:^|.*;\s*)email\s*\=\s*([^;]*).*$)|^.*$/, "$1");
