@@ -51,7 +51,6 @@ const Login = () => {
 
   return (
     <>
-      <Header />
       <section className='Login'>
         <h1>¡Bienvenido!</h1>
         <form className='form-control' onSubmit={handleSubmit(onSubmit)}>

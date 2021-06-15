@@ -8,7 +8,7 @@ const Header = () => {
     <header className='Header'>
       <div className='Header__logo'>
         <figure className='Header__logo--image'>
-          <img src={Logo} alt='' />
+          <Link to='/'> <img src={Logo} alt='Logo Crea' /></Link>
         </figure>
         <p>CREA</p>
       </div>
