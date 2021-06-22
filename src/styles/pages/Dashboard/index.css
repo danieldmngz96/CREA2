@@ -26,5 +26,25 @@
     padding-top: 10%;
     padding-bottom: 3%;
 }
+.position__calendar{
+  padding-top: 7%;
+}
+.text__nextpay{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.advance{
+  padding-top: 8%;
+}
+.position__pay{
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container{
+    display: block;
+  }
+}
+
 
 

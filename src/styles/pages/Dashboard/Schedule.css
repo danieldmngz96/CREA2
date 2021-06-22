@@ -16,3 +16,12 @@
   .whatsapp-icon {
     margin-top:13px;
   }
+.position__CalendarBig{
+  padding-left: 39%;
+  padding-right: 27%;
+}
+@media (max-width: 600px) {
+  .position__CalendarBig{
+    padding: 0%;
+  }
+}
