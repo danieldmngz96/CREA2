@@ -45,7 +45,7 @@ export default function CustomizedTimeline() {
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot>
+          <TimelineDot >
             <LaptopMacIcon />
           </TimelineDot>
           <TimelineConnector />
