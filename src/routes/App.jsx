@@ -9,6 +9,7 @@ import Schedule from '../pages/Dashboard/Schedule';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Planes from '../pages/Planes';
+import Registry from '../pages/Registry/Registry';
 import '../styles/index.css';
 
 
@@ -31,10 +32,12 @@ const App = () => {
               <Route exact path='/' component={Home} />
               <Route exact path='/login' component={Login} />
               <Route exact path='/Planes' component={Planes} />
+              <Route exact path='/Registry' component={Registry} />
             </Switch>
           </Layout>
         </BrowserRouter>
       )}
+
       {Object.keys(user).length !== 0 && (
         <BrowserRouter>
           <DashboardLayout>

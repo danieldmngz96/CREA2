@@ -20,7 +20,7 @@ const Dashboard = () => {
     <>
       <section>
         <h1>{name__user} Bienvenido a CREA DESARROLLO </h1>
-        {/* <div className="container"> */}
+        <div className="container">
         <div className='calendar'>
           <h1 className='calendar__title'>CALENDARIO</h1>
           <div className='position__calendar'>
@@ -52,6 +52,8 @@ const Dashboard = () => {
             <i class='fa fa-whatsapp whatsapp-icon'></i>
           </a>
         </div>
+        </div>
+       
       </section>
     </>
   );

@@ -1,0 +1,47 @@
+.Home__Registry {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background: url('../../../../src/assets/RegistryFondo.png');
+    background-repeat: repeat;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Position__Registry--three {
+    background: initial;
+    height: 235px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9806F5;
+    
+  }
+  
+  .Position__Registry--two {
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 320px;
+  }
+
+  .title__registry{
+    color: #fff;
+    text-align: center;
+  }
+
+  .text__registry {
+    color: #fff;
+    text-align: center;
+  }
+.Stepper{ 
+    
+    right: 440px;
+    top: 408px;
+    padding: 20px;
+}
+.Position__Registry--one{
+    display: contents;
+
+}

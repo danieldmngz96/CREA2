@@ -8,7 +8,7 @@ const Schedule = () => {
     <section >
       <div className="position__CalendarBig">
         <div className="wrapper">
-          <main>
+          <main className="main__Calendar">
           <h1>Calendario</h1>
           <h4>Aqui podras encontrar todas las actividades y reuniones:</h4>
             <div className="toolbar">
@@ -46,7 +46,12 @@ const Schedule = () => {
                 <div className="calendar__day day">9</div>
                 <div className="calendar__day day">10</div>
                 <div className="calendar__day day">11</div>
-                <div className="calendar__day day">12</div>
+
+                <div className="text__activity">
+                <div className="calendar__day--special day">12</div> 
+                <p>Revision de SCRUM <br/> Correcion de errores 🚫</p>
+                </div>
+                
                 <div className="calendar__day day">13</div>
                 <div className="calendar__day day">14</div>        
               </div>
@@ -60,9 +65,16 @@ const Schedule = () => {
                 <div className="calendar__day day">21</div>    
               </div>
               <div className="calendar__week">
-                <div className="calendar__day day">22</div>
+              <div className="text__activity">
+                <div className="calendar__day--special day">22</div> 
+                <p>Entrega Final 🎉</p>
+                </div>
                 <div className="calendar__day day">23</div>
-                <div className="calendar__day day">24</div>
+
+                <div className="text__activity">
+                <div className="calendar__day--special day">24</div>
+                <p>Reunion equipo <br/> FRONT Y BACK 💻</p>
+                </div>
                 <div className="calendar__day day">25</div>
                 <div className="calendar__day day">26</div> 
                 <div className="calendar__day day">27</div> 
@@ -84,7 +96,7 @@ const Schedule = () => {
           </main>
         </div>
       </div>
-      <a href="https://wa.me/?text=Me%20gustaría%20saber%20más%20sobre%20mi%20proyecto" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      <a href="https://wa.me/?text=Me%20gustaría%20saber%20más%20sobre%20mi%20proyecto" className="whatsapp" target="_blank"> <i className="fa fa-whatsapp whatsapp-icon"></i></a>
     </section>
   );
 };

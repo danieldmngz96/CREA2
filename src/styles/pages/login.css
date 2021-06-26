@@ -1,7 +1,7 @@
 .Login {
   display: grid;
   width: 100%;
-  padding: 100px 20px;
+  padding: 199px 20px;
   justify-items: center;
   gap: 20px;
   background-image: radial-gradient(ellipse farthest-corner at 80% 75% , rgba(0, 255, 0, 0) 70%, rgba(0, 255, 0, 0) 10%, #111827 10%);
