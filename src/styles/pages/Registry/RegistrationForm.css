@@ -1,0 +1,37 @@
+
+.BackgroundForm__hero {
+    width: 100%;
+    padding: 4rem 0;
+    background: url('../../../../src/assets/RegistryFondo.png');
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+  
+    display: flex;
+    justify-content: center;
+  }
+  .title__Welcome{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 300%;
+    color: #fff;
+  }
+  .title__Next{
+      color: #000;
+      text-align: center;
+      font-size: 150%;
+      font-family: 'Kaushan Script', cursive;
+  }
+
+  
+  .RegistrationForm__hero {
+    width: 100%;
+    padding: 2rem 0;
+    background: url('../../../assets/RegistryFondo.png') ;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  

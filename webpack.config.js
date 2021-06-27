@@ -9,6 +9,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  stats: {
+    children: true,
+  },
   resolve: {
     extensions: ['.js', '.jsx'],
   },

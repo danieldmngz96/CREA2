@@ -10,7 +10,9 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Planes from '../pages/Planes';
 import Registry from '../pages/Registry/Registry';
+import RegistrationForm from '../pages/Registry/RegistrationForm';
 import '../styles/index.css';
+
 
 
 const App = () => {
@@ -33,6 +35,7 @@ const App = () => {
               <Route exact path='/login' component={Login} />
               <Route exact path='/Planes' component={Planes} />
               <Route exact path='/Registry' component={Registry} />
+              <Route exact path='/RegistrationForm' component={RegistrationForm} />
             </Switch>
           </Layout>
         </BrowserRouter>

@@ -26,11 +26,11 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return 'Select campaign settings...';
+      return 'Seleciona uno para seguir ...✨';
     case 1:
-      return 'What is an ad group anyways?';
+      return 'Llena el formulario 😎';
     case 2:
-      return 'This is the bit I really care about!';
+      return 'Listo ya estas Registrado ✔';
     default:
       return 'Unknown step';
   }
@@ -118,18 +118,9 @@ export default function HorizontalLinearStepper() {
             <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
             <div>
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
-                Back
+                Atras
               </Button>
-              {isStepOptional(activeStep) && (
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={handleSkip}
-                  className={classes.button}
-                >
-                  Skip
-                </Button>
-              )}
+            
 
               <Button
                 variant="contained"
@@ -137,7 +128,7 @@ export default function HorizontalLinearStepper() {
                 onClick={handleNext}
                 className={classes.button}
               >
-                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                {activeStep === steps.length - 1 ? 'Listo' : 'Siguiente'}
               </Button>
             </div>
           </div>
