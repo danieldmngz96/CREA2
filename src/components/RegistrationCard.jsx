@@ -3,13 +3,14 @@ import React from 'react';
 import '../../src/styles/components/RegistrationCard.css';
 //import confLogo from '../images/badge-header.svg';
 import Gravatar from './Gravatar';
+import Logo from'../../src/assets/logo.png';
 
 class RegistrationCard extends React.Component {
   render() {
     return (
       <div className="Badge">
         <div className="Badge__header">
-          <img src="../../src/assets/logo.png" alt="Logo" />
+          <img src={Logo} alt="Logo" className="Header__Card" />
         </div>
 
         <div className="Badge__section-name">

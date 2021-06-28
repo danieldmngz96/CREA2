@@ -11,6 +11,7 @@ import Login from '../pages/Login';
 import Planes from '../pages/Planes';
 import Registry from '../pages/Registry/Registry';
 import RegistrationForm from '../pages/Registry/RegistrationForm';
+import RegistryList from '../pages/Registry/RegistryList'
 import '../styles/index.css';
 
 
@@ -36,6 +37,7 @@ const App = () => {
               <Route exact path='/Planes' component={Planes} />
               <Route exact path='/Registry' component={Registry} />
               <Route exact path='/RegistrationForm' component={RegistrationForm} />
+              <Route exact path='/RegistryList' component={RegistryList} />
             </Switch>
           </Layout>
         </BrowserRouter>

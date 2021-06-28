@@ -1,6 +1,6 @@
 import React from 'react';
 //import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 import '../../styles/pages/Registry/Registry.css';
 import Stepper from '../../components/Stepper';

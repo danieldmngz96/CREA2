@@ -19,19 +19,39 @@
       text-align: center;
       font-size: 150%;
       font-family: 'Kaushan Script', cursive;
+      padding-bottom: 3%;
   }
+
+  .title__New--Registry{
+    color: #000;
+    font-size: 180%;
+    font-family: 'Kaushan Script', cursive;
+  }
+
 
   
   .RegistrationForm__hero {
-    width: 100%;
+    width: 91%;
+    height: 82%;
     padding: 2rem 0;
-    background: url('../../../assets/RegistryFondo.png') ;
+    background: url('../../../assets/BGCard.png') ;
     background-repeat: repeat;
     margin-bottom: 1rem;
     color: #ffffff;
-  
     display: flex;
     justify-content: center;
+    padding-bottom: 140px;
+    margin-left: 26px;
   }
+  .main_From{
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
+    column-gap: 2px;
+    row-gap: 5px;
+  }
+  .Registry__Inputs{
+
+  }
+
   
   

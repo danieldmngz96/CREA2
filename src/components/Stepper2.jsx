@@ -5,7 +5,6 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import RegistrationForm from '../pages/Registry/RegistrationForm';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,7 +38,7 @@ function getStepContent(step) {
 
 export default function HorizontalLinearStepper() {
   const classes = useStyles();
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(1);
   const [skipped, setSkipped] = React.useState(new Set());
   const steps = getSteps();
 
@@ -121,18 +120,16 @@ export default function HorizontalLinearStepper() {
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                 Atras
               </Button>
-              
-             
-             <Button
+            
+
+              <Button
                 variant="contained"
                 color="primary"
                 onClick={handleNext}
                 className={classes.button}
               >
-              {activeStep === steps.length - 1 ? 'Listo' : 'Siguiente'}
+                {activeStep === steps.length - 1 ? 'Listo' : 'Siguiente'}
               </Button>
-
-            
             </div>
           </div>
         )}
