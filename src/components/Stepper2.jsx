@@ -117,7 +117,7 @@ export default function HorizontalLinearStepper() {
           <div>
             <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
             <div>
-              <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
+              <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button} href="Registry">
                 Atras
               </Button>
             
@@ -127,6 +127,7 @@ export default function HorizontalLinearStepper() {
                 color="primary"
                 onClick={handleNext}
                 className={classes.button}
+                href="RegistryList"
               >
                 {activeStep === steps.length - 1 ? 'Listo' : 'Siguiente'}
               </Button>
