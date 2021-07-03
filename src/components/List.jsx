@@ -38,13 +38,13 @@ function useSearchBadges(RegistryList) {
         .includes(query.toLowerCase());
     });
 
-    setFilteredBadges(result);
+    setFilteredRegistryList(result);
   }, [RegistryList, query]);
 
   return { query, setQuery, filteredRegistryList };
 }
 
-function RegistrationList(props) {
+function List (props) {
   const RegistryList = props.RegistryList;
 
   const { query, setQuery, filteredRegistryList } = useSearchBadges(RegistryList);
@@ -94,7 +94,7 @@ function RegistrationList(props) {
                 className="text-reset text-decoration-none"
                 to={`/RegistryList/${RegistrationCard.id}`}
               >
-                <BadgesListItem RegistrationCard={RegistrationCard} />
+                <List RegistrationCard={RegistrationCard} />
               </Link>
             </li>
           );

@@ -17,6 +17,11 @@ class RegistryList extends React.Component {
     data: undefined,
   };
 
+ 
+
+  
+
+
   render() {
     /*if (this.state.loading === true && !this.state.data) {
       return <PageLoading />;
@@ -47,7 +52,7 @@ class RegistryList extends React.Component {
             </Link>
           </div>
           <Stepper3></Stepper3>
-         {/*<List RegistryList={this.state.data} />*/} 
+        {/*<List RegistryList={this.state.data} />*/} 
          {this.state.loading && <MiniLoader />}
         </div>
           </React.Fragment>
