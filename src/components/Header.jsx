@@ -15,7 +15,8 @@ const Header = () => {
       <nav className='Header__nav'>
         <Link to='/'>Inicio</Link>
         <Link to='/'>Precios</Link>
-        <Link to='/'>Contacto</Link>
+        <Link to='/'>Portafolio</Link>
+        <Link to='/'>Contactanos</Link>
         <Link exact to='/Registry'>Registrate</Link>
       </nav>
       <nav className='Header__links'>

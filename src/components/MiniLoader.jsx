@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './styles/Loader.css';
+import '../styles/components/Loader.css';
 
 export default class MiniLoader extends Component {
   render() {

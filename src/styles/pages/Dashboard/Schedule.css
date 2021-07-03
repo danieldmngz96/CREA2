@@ -158,14 +158,6 @@ sidebar {
 .calendar__day {
   padding: 16px;
 }
-.calendar__day--special {
-  color: #;
-  border-right: 1px solid var(--secondary-color);
-  border-top: 1px solid #e1e1e1;
-}
-
-
-
 
 /* COSMETIC STYLING */
 
@@ -182,14 +174,11 @@ body {
   color: #A8B2B9;
 }
 
-sidebar {
+.sidebar {
   background-color: white;
   box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-main {
-  background-color: var(--white);;
-}
 
 .avatar__name {
   font-size: 0.8rem;

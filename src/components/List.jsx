@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../../src/styles/components/RegistrationList.css';
 import Gravatar from './Gravatar';
-import RegistrationCard from './RegistrationCard';
+//import RegistrationCard from './RegistrationCard';
 
 class RegistrationList extends React.Component {
   render() {

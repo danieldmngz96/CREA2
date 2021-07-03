@@ -22,7 +22,7 @@ async function callApi(endpoint, options = {}) {
 }
 
 const api = {
-  badges: {
+  RegistryList: {
     list() {
       return callApi('/RegistryList');
     },
@@ -43,8 +43,8 @@ const api = {
       });
     },
     // Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
-    remove(RegistrationCardId) {
-      return callApi(`/RegistryList/${badgeId}`, {
+    remove(RegistryListId) {
+      return callApi(`/RegistryList/${RegistryListId}`, {
         method: 'DELETE',
       });
     },
